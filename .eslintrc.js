@@ -1,0 +1,35 @@
+module.exports = {
+  root: true,
+  env: {
+    node: true,
+  },
+  extends: ['plugin:vue/essential', 'plugin:vue/recommended', 'plugin:vue/strongly-recommended', '@vue/airbnb'],
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+
+    semi: 0,
+    'max-len': 'off',
+    'linebreak-style': 'off',
+    camelcase: ['error', { properties: 'never', ignoreDestructuring: true, ignoreImports: true }],
+    'arrow-parens': ['error', 'as-needed'],
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'no-plusplus': 0,
+    'no-param-reassign': 0,
+    'quotes': 0,
+    'eqeqeq': 0,
+    'import/prefer-default-export': 0,
+    'vue/html-closing-bracket-newline': 0,
+    'vue/html-indent': 0,
+    'arrow-parens': 0,
+    "template-curly-spacing": "off",
+    indent: "off",
+    'object-curly-newline': 0,
+  },
+}
