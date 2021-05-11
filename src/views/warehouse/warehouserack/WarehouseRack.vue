@@ -39,7 +39,7 @@
                           <small class="text-danger">{{ errors[0] }}</small>
                         </b-form-group>
                       </ValidationProvider>
-              </ValidationObserver>
+                    </ValidationObserver>
                 </b-col>
               </b-row>
               <b-row class="match-height">
@@ -102,6 +102,19 @@
                         </b-form-group>
                       </ValidationProvider>
               </ValidationObserver>
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col class="overflow-auto">
+                  <b-col lg="6" md="6" sm="12" class="mt-3 ml-auto mr-auto">
+                    <b-pagination
+                      v-model="currentPage"
+                      :total-rows="rows"
+                      :per-page="perPage"
+                      first-number
+                      last-number
+                    />
+                  </b-col>
                 </b-col>
               </b-row>
             </b-col>
@@ -197,6 +210,9 @@ export default {
   },
   data() {
     return {
+      rows: 100,
+      perPage: 10,
+      currentPage: 1,
       selected: null,
       options: null,
       rules: {
