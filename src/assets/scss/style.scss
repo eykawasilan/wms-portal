@@ -1,0 +1,82 @@
+/*================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+body {
+    background-color: #fff !important;
+}
+
+.box-row {
+    border:1px solid #333;
+    height:40px;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-layout {
+    border:1px solid #333;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-layout-path {
+    border:1px solid #77c9bf;
+    background: #77c9bf;
+    color: #fff;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rack-title {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.box-rack {
+    border:1px solid #333;
+    height:40px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[dir] .modal .modal-header {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+[dir=ltr] .modal .modal-header .close {
+    transform: translate(0px, -0px) !important;
+}
+
+[dir] .modal .modal-header .close {
+    padding: 0.2rem 0.62rem;
+    box-shadow: none !important;
+    border-radius: 0.357rem;
+    background: #fff;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 40%;
+  }
+}
+
+.main-menu .navbar-header {
+    height: 100%;
+    width: 260px;
+    height: 6rem;
+    position: relative;
+    transition: 300ms ease all, background 0s;
+}

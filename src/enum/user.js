@@ -1,0 +1,10 @@
+const USER_ROLE = {
+  EPOST_USER: 1,
+  WAREHOUSE_ADMIN: 2,
+  WAREHOUSE_USER: 3,
+  CLIENT: 4,
+}
+
+export {
+  USER_ROLE,
+}
