@@ -14,6 +14,11 @@
               md="10"
               class="ml-auto mr-auto mt-5"
             >
+              <b-row>
+                <b-col lg="9" md="9" sm="9">
+                <h3>Row:</h3>
+              </b-col>
+              </b-row>
               <!-- Tabs with card integration -->
               <b-tabs
                 v-model="tabIndex"
